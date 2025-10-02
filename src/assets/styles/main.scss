@@ -1,0 +1,10 @@
+@use './base/base';
+@use './base/normalize';
+@use './base/typography';
+@use './base/responsive';
+@use './base/themes' as *;
+@use 'ant-design-vue/dist/reset.css';
+
+:root {
+  @include theme-light;
+}

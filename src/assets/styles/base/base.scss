@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  vertical-align: baseline;
+}
+
+body {
+  font-weight: normal;
+  font-family: 'SF Pro Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 0;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+form {
+  width: 100%;
+}
+
+.permissions-page {
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
+
+.main-layout-sidebar .ant-layout .ant-layout-sider {
+  width: 280px !important;
+  max-width: 200px !important;
+  min-width: 280px !important;
+}
+
+
+.main-layout-sidebar .ant-layout .ant-layout-sider-trigger {
+  width: 280px !important;
+}
+
+

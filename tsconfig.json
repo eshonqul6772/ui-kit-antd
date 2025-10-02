@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "target": "ES2023",
+    "lib": ["ES2023", "ESNext", "DOM"],
+
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowJs": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "types": ["ant-design-vue", "vue-i18n"],
+    "noImplicitThis": false,
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite.config.js"
+  ]
+}

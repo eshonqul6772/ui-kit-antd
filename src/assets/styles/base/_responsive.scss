@@ -1,0 +1,77 @@
+/*
+  0 - 320px ----------   mobile-small
+  320px - 480px ------   mobile-medium
+  481px - 768px ------   tablet-small
+  769px - 920px ------   tablet-medium
+  921px - 1024px -----   laptop-small
+  1025px - 1200px -----  laptop-medium
+  1201px - 1400px -----  laptop-large
+  1401px - 1600px -----  desktop-small
+  1601px - 1800px -----  desktop-medium
+  1800px - +      -----  desktop-large
+ */
+
+$mobile-small-media: mobile-small;
+$mobile-medium-media: mobile-medium;
+$tablet-small-media: tablet-small;
+$tablet-medium-media: tablet-medium;
+$laptop-small-media: laptop-small;
+$laptop-medium-media: laptop-medium;
+$laptop-large-media: laptop-large;
+$desktop-small-media: desktop-small;
+$desktop-medium-media: desktop-medium;
+$desktop-large-media: desktop-large;
+
+$mobile-small: 320px;
+$mobile-medium: 480px;
+$tablet-small: 768px;
+$tablet-medium: 920px;
+$laptop-small: 1024px;
+$laptop-medium: 1200px;
+$laptop-large: 1400px;
+$desktop-small: 1600px;
+$desktop-medium: 1800px;
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == $mobile-small-media {
+    @media screen and (max-device-width: $mobile-small) {
+      @content;
+    }
+  } @else if ($breakpoint == $mobile-medium-media) {
+    @media screen and (max-device-width: $mobile-medium) {
+      @content;
+    }
+  } @else if ($breakpoint == $tablet-small-media) {
+    @media screen and (max-width: $tablet-small) {
+      @content;
+    }
+  } @else if ($breakpoint == $tablet-medium-media) {
+    @media screen and (max-width: $tablet-medium) {
+      @content;
+    }
+  } @else if ($breakpoint == $laptop-small-media) {
+    @media screen and (max-width: $laptop-small) {
+      @content;
+    }
+  } @else if ($breakpoint == $laptop-medium-media) {
+    @media screen and (max-width: $laptop-medium) {
+      @content;
+    }
+  } @else if ($breakpoint == $laptop-large-media) {
+    @media screen and (max-width: $laptop-large) {
+      @content;
+    }
+  } @else if ($breakpoint == $desktop-small-media) {
+    @media screen and (max-width: $desktop-small) {
+      @content;
+    }
+  } @else if ($breakpoint == $desktop-medium-media) {
+    @media screen and (max-width: $desktop-medium) {
+      @content;
+    }
+  } @else if ($breakpoint == $desktop-large-media) {
+    @media screen and (min-width: $desktop-medium) {
+      @content;
+    }
+  }
+}
